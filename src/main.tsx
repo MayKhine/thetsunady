@@ -5,6 +5,8 @@ import { BrowserRouter, Routes, Route } from "react-router-dom"
 
 import "./index.css"
 import { Home } from "./components/pages/Home"
+import { About } from "./components/pages/About"
+import { Paintings } from "./components/pages/Paintings"
 
 // createRoot(document.getElementById("root")!).render(
 ReactDOM.createRoot(document.getElementById("root")!).render(
@@ -13,6 +15,8 @@ ReactDOM.createRoot(document.getElementById("root")!).render(
     <BrowserRouter>
       <Routes>
         <Route element={<Home />} path="/"></Route>
+        <Route element={<About />} path="/about"></Route>
+        <Route element={<Paintings />} path="/paintings"></Route>
       </Routes>
     </BrowserRouter>
   </React.StrictMode>

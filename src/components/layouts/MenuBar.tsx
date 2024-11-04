@@ -19,14 +19,14 @@ export const MenuBar = () => {
         <Link to="/">
           <Button text="Home" />
         </Link>
-        {/* <Link to="/paintings">
+        <Link to="/paintings">
           <Button text="Paintings" />
         </Link>
 
         <Link to="/about">
           <Button text="About" />
         </Link>
-        <Link to="/contact">
+        {/* <Link to="/contact">
           <Button text="Contact" />
         </Link> */}
       </div>

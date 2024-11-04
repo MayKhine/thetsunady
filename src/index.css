@@ -16,3 +16,17 @@ body {
   font-size: 12px;
   line-height: 1.5;
 }
+
+a {
+  text-decoration: none;
+}
+
+p {
+  margin: 0%;
+}
+
+textarea,
+input {
+  font-family: "Mulish", sans-serif;
+  font-optical-sizing: auto;
+}
