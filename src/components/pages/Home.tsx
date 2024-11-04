@@ -30,6 +30,7 @@ export const Home = () => {
 const styles = stylex.create({
   base: {
     // backgroundColor: tokens.green2,
+    // marginTop: "5rem",
     display: "flex",
     flexDirection: "column",
     alignContent: "center",
@@ -38,6 +39,7 @@ const styles = stylex.create({
     alignItems: "center",
   },
   paintingDiv: {
+    marginTop: "5rem",
     display: "flex",
     flexDirection: "column",
     // backgroundColor: "white",

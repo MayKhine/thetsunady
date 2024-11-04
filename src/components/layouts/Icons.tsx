@@ -27,12 +27,35 @@ export const Icons = () => {
 }
 
 const styles = stylex.create({
-  iconDiv: {
+  footbar: {
+    // position: "fixed",
+    // bottom: "0",
+    // display: "flex",
     // backgroundColor: "white",
+    // flexDirection: "row",
+    // justifyContent: "flex-end",
+    // alignSelf: "flex-end",
+    // alignItems: "flex-end",
+    // alignContent: "flex-end",
+    // padding: "1rem",
+  },
+
+  iconDiv: {
+    // backgroundColor: "red",
     display: "flex",
     flexDirection: "row",
+    // alignSelf: "flex-end",
     gap: "1rem",
-    padding: "3rem",
+    padding: "2rem",
     // cursor: "pointer",
+
+    // position: "fixed",
+    // bottom: 0,
+    // left: 0,
+    // width: "100%",
+    // backgroundColor: "#333",
+    // color: "#fff",
+    // textAlign: "center",
+    // zIndex: 1000,
   },
 })

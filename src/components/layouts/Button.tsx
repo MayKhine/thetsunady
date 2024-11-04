@@ -5,12 +5,19 @@ type ButtonProps = {
   type?: "button" | "submit" | "reset"
   text: string
   onClickFn?: () => void
+  // children?: React.ReactNode
 }
 
-export const Button = ({ type, text, onClickFn }: ButtonProps) => {
+export const Button = ({
+  type,
+  text,
+  onClickFn,
+}: //  children
+ButtonProps) => {
   return (
     <button type={type} {...stylex.props(styles.base)} onClick={onClickFn}>
       {text.toLocaleUpperCase()}
+      {/* {children} */}
     </button>
   )
 }

@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom"
 import * as stylex from "@stylexjs/stylex"
 import { Button } from "./Button"
-
+import { DropdownMenu } from "./DropdownMenu"
 export const MenuBar = () => {
   // const navigate = useNavigate()
 
@@ -26,6 +26,8 @@ export const MenuBar = () => {
         <Link to="/about">
           <Button text="About" />
         </Link>
+
+        <DropdownMenu />
         {/* <Link to="/contact">
           <Button text="Contact" />
         </Link> */}
@@ -41,7 +43,7 @@ const styles = stylex.create({
     display: "flex",
     flexDirection: "row",
     justifyContent: "space-between",
-    position: "sticky",
+    position: "fixed",
     top: "0",
     paddingTop: ".5rem",
     paddingBottom: ".5rem",
