@@ -11,7 +11,6 @@ import { Paintings } from "./components/pages/Paintings"
 // createRoot(document.getElementById("root")!).render(
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
-    {/* <App /> */}
     <BrowserRouter>
       <Routes>
         <Route element={<Home />} path="/"></Route>
