@@ -2,7 +2,10 @@ import { Link } from "react-router-dom"
 import * as stylex from "@stylexjs/stylex"
 import { Button } from "./Button"
 import { DropdownMenu } from "./DropdownMenu"
+import { useState } from "react"
 export const MenuBar = () => {
+  const [isOpen, setIsOpen] = useState(false)
+
   // const navigate = useNavigate()
 
   // const buttonClickFn = (text: string) => {
@@ -10,6 +13,9 @@ export const MenuBar = () => {
   //   console.log("What is the path? " + path)
   //   navigate(path, { replace: true })
   // }
+  const toggleDropDown = () => {
+    setIsOpen(!isOpen)
+  }
 
   return (
     <div {...stylex.props(styles.base)}>
@@ -23,14 +29,17 @@ export const MenuBar = () => {
           <Button text="Paintings" />
         </Link>
 
-        <Link to="/about">
+        <div
+          {...stylex.props(styles.dropdownMenuContainer)}
+          onMouseEnter={toggleDropDown}
+          onMouseLeave={toggleDropDown}
+        >
+          {/* <Link to="/aboutt"> */}
           <Button text="About" />
-        </Link>
+          {/* </Link> */}
 
-        <DropdownMenu />
-        {/* <Link to="/contact">
-          <Button text="Contact" />
-        </Link> */}
+          {isOpen && <DropdownMenu />}
+        </div>
       </div>
     </div>
   )
@@ -60,5 +69,12 @@ const styles = stylex.create({
     display: "flex",
     flexDirection: "row",
     justifyContent: "space-between",
+    // alignContent: "center",
+    alignItems: "center",
+  },
+  dropdownMenuContainer: {
+    // backgroundColor: "red",
+    // position: "relative",
+    display: "inline-block",
   },
 })

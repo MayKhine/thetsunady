@@ -12,6 +12,7 @@ export const Button = ({
   type,
   text,
   onClickFn,
+  onHoverFn,
 }: //  children
 ButtonProps) => {
   return (

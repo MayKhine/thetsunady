@@ -11,5 +11,10 @@ export const DropdownMenu = () => {
 }
 
 const styles = stylex.create({
-  base: { backgroundColor: "red", display: "flex", flexDirection: "column" },
+  base: {
+    display: "flex",
+    flexDirection: "column",
+    position: "absolute",
+    zIndex: 1,
+  },
 })
