@@ -25,9 +25,6 @@ export const MenuBar = () => {
         <Link to="/">
           <Button text="Home" />
         </Link>
-        <Link to="/paintings">
-          <Button text="Paintings" />
-        </Link>
 
         <div
           {...stylex.props(styles.dropdownMenuContainer)}
@@ -40,6 +37,9 @@ export const MenuBar = () => {
 
           {isOpen && <DropdownMenu />}
         </div>
+        <Link to="/paintings">
+          <Button text="Paintings" />
+        </Link>
       </div>
     </div>
   )

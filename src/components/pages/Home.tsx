@@ -1,6 +1,6 @@
 import * as stylex from "@stylexjs/stylex"
 import { MenuBar } from "../layouts/MenuBar"
-import { Icons } from "../layouts/Icons"
+import { Footer } from "../layouts/Footer"
 import p1 from "../../assets/paintings/1.png"
 import p2 from "../../assets/paintings/2.png"
 import p3 from "../../assets/paintings/3.png"
@@ -21,7 +21,7 @@ export const Home = () => {
           <img src={p4} />
           <img src={p5} />
         </div>
-        <Icons />
+        <Footer />
       </div>
     </div>
   )
