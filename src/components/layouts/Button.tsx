@@ -24,7 +24,7 @@ ButtonProps) => {
 
 const styles = stylex.create({
   base: {
-    backgroundColor: "rgba(255,255,255,0.4)",
+    backgroundColor: "rgba(255,255,255,0.0)",
     color: {
       default: tokens.green4,
       ":hover": tokens.brown3,

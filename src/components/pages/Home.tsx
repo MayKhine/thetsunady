@@ -7,11 +7,14 @@ import p3 from "../../assets/paintings/3.png"
 import p4 from "../../assets/paintings/4.png"
 import p5 from "../../assets/paintings/5.png"
 import { tokens } from "../../tokens.stylex"
+import { HamburgerMenu } from "../layouts/HamburgerMenu"
 
 export const Home = () => {
   return (
     <div>
-      <MenuBar />
+      {/* <MenuBar /> */}
+
+      <HamburgerMenu />
       <div {...stylex.props(styles.base)}>
         <div {...stylex.props(styles.paintingDiv)}>
           <img src={p1} />

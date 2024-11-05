@@ -31,10 +31,7 @@ export const MenuBar = () => {
           onMouseEnter={toggleDropDown}
           onMouseLeave={toggleDropDown}
         >
-          {/* <Link to="/aboutt"> */}
           <Button text="About" />
-          {/* </Link> */}
-
           {isOpen && <DropdownMenu />}
         </div>
         <Link to="/paintings">
@@ -47,7 +44,11 @@ export const MenuBar = () => {
 
 const styles = stylex.create({
   base: {
-    backgroundColor: "rgba(255,255,255,0.7)",
+    // backgroundColor: "rgba(255,255,255,0.7)",
+    // backgroundColor: {
+    //   default: "red",
+    //   "@media (max-width: 576px)": "pink",
+    // },
     width: "100%",
     display: "flex",
     flexDirection: "row",
