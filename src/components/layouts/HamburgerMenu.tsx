@@ -5,25 +5,24 @@ import { useState } from "react"
 import { GiHamburgerMenu } from "react-icons/gi"
 
 export const HamburgerMenu = () => {
-  const [isOpen, setIsOpen] = useState(false)
-
+  const [isHamMenuOpen, setIsHamMenuOpen] = useState(false)
   return (
     <div {...stylex.props(styles.base)}>
       <div {...stylex.props(styles.logoDiv)}> Thet Su Nady</div>
       <div
         onMouseLeave={() => {
-          setIsOpen(!isOpen)
+          setIsHamMenuOpen(false)
         }}
         {...stylex.props(styles.buttonsContainer)}
         onClick={() => {
-          setIsOpen(!isOpen)
+          setIsHamMenuOpen(true)
         }}
       >
         <div {...stylex.props(styles.hamburger)}>
-          <GiHamburgerMenu />
+          <GiHamburgerMenu style={{ fontSize: "2rem" }} />
         </div>
-        {isOpen && (
-          <div {...stylex.props(styles.buttonsDiv)}>
+        {isHamMenuOpen && (
+          <div {...stylex.props(styles.dropdownButtonsDiv)}>
             <Link to={"/"}>
               <Button text="Home"></Button>
             </Link>
@@ -71,18 +70,18 @@ const styles = stylex.create({
     // flexDirection: "column",
     display: "inline-block",
   },
-  hamburger: { width: "4rem", cursor: "pointer" },
-  buttonsDiv: {
-    // zIndex: 1,
-
-    // display: "flex",
-    // flexDirection: "column",
+  hamburger: {
+    // width: "8rem",
+    cursor: "pointer",
+    paddingRight: "3rem",
+  },
+  dropdownButtonsDiv: {
     backgroundColor: "rgba(255,255,255,.8)",
-
     display: "flex",
     flexDirection: "column",
     position: "absolute",
     right: "0",
     zIndex: 1,
+    width: "100%",
   },
 })

@@ -8,13 +8,13 @@ import p4 from "../../assets/paintings/4.png"
 import p5 from "../../assets/paintings/5.png"
 import { tokens } from "../../tokens.stylex"
 import { HamburgerMenu } from "../layouts/HamburgerMenu"
-
+import { Header } from "../layouts/Header"
 export const Home = () => {
   return (
     <div>
       {/* <MenuBar /> */}
-
-      <HamburgerMenu />
+      <Header />
+      {/* <HamburgerMenu /> */}
       <div {...stylex.props(styles.base)}>
         <div {...stylex.props(styles.paintingDiv)}>
           <img src={p1} />
