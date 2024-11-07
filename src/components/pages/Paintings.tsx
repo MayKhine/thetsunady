@@ -1,10 +1,10 @@
 import { tokens } from "../../tokens.stylex"
-import { MenuBar } from "../layouts/MenuBar"
+import { Header } from "../layouts/Header"
 import * as stylex from "@stylexjs/stylex"
 export const Paintings = () => {
   return (
     <div>
-      <MenuBar />
+      <Header />
       <div {...stylex.props(styles.base)}> Paintings </div>
     </div>
   )

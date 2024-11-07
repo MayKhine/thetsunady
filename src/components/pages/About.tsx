@@ -1,13 +1,13 @@
 import * as stylex from "@stylexjs/stylex"
-import { MenuBar } from "../layouts/MenuBar"
 import profilePic from "../../assets/photos/profile.jpg"
 import { tokens } from "../../tokens.stylex"
 import { Footer } from "../layouts/Footer"
+import { Header } from "../layouts/Header"
 export const About = () => {
   return (
     <div>
       <div {...stylex.props(styles.pageContainer)}>
-        <MenuBar />
+        <Header />
         <div {...stylex.props(styles.base)}>
           <div {...stylex.props(styles.baseDiv)}>
             <img {...stylex.props(styles.img)} src={profilePic} />

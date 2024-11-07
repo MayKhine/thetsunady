@@ -8,7 +8,7 @@ export const DropdownMenu = () => {
       <Link to={"/about"}>
         <Button text="Info"></Button>
       </Link>
-      <Link to={"/experiences"}>
+      <Link to={"/exibitions"}>
         <Button text="Exibiitions"></Button>
       </Link>
     </div>
