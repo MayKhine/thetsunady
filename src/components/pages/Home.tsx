@@ -1,6 +1,5 @@
 import * as stylex from "@stylexjs/stylex"
 import { Footer } from "../layouts/Footer"
-import p0 from "../../assets/paintings/0.png"
 
 import p1 from "../../assets/paintings/1.png"
 import p2 from "../../assets/paintings/2.png"

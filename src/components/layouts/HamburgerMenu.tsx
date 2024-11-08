@@ -54,7 +54,7 @@ export const HamburgerMenu = () => {
 
 const styles = stylex.create({
   base: {
-    // backgroundColor: "rgba(255,255,255,0.7)",
+    backgroundColor: "rgba(255,255,255,0.7)",
     // backgroundColor: {
     //   default: "red",
     //   "@media (max-width: 576px)": "pink",
@@ -85,7 +85,7 @@ const styles = stylex.create({
     cursor: "pointer",
     paddingRight: "3rem",
     width: "100%",
-    backgroundColor: "rgba(255,255,255,1)",
+    // backgroundColor: "rgba(255,255,255,1)",
   },
   dropdownButtonsDiv: {
     backgroundColor: "rgba(255,255,255,0.8)",
