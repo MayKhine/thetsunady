@@ -10,9 +10,9 @@ export const About = () => {
         <Header />
         <div {...stylex.props(styles.base)}>
           <div {...stylex.props(styles.baseDiv)}>
-            <div {...stylex.props(styles.imgDiv)}>
-              <img {...stylex.props(styles.img)} src={profilePic} />
-            </div>
+            {/* <div {...stylex.props(styles.imgDiv)}> */}
+            <img {...stylex.props(styles.img)} src={profilePic} />
+            {/* </div> */}
             <div {...stylex.props(styles.about)}>
               <p {...stylex.props(styles.title)}>Thet Su Nady</p>
               <p {...stylex.props(styles.subText)}>
@@ -68,19 +68,26 @@ const styles = stylex.create({
     flexWrap: "wrap",
     alignItems: "center",
     justifyContent: "center",
+    width: "100%",
   },
   imgDiv: { backgroundColor: tokens.green2 },
-  img: { maxWidth: "300px", height: "auto", objectFit: "cover" },
+  img: {
+    maxWidth: "270px",
+    // maxWidth: "20rem",
+    height: "auto",
+    objectFit: "cover",
+  },
 
   about: {
     // display: "flex",
     // flexDirection: "column",
-    margin: "3rem",
-    backgroundColor: tokens.brown1,
+    margin: "1.5rem",
+    // padding: "1rem",
+    // backgroundColor: tokens.brown1,
     color: tokens.green4,
     width: "50%",
-    // rowGap: "1rem",
-    // minWidth: "50%",
+    minWidth: "270px",
+    maxWidth: "500px",
     // minWidth: "300px",
   },
   title: { fontSize: "1.5rem" },
