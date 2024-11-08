@@ -3,16 +3,26 @@ import { Button } from "./Button"
 import { Link } from "react-router-dom"
 import { useState } from "react"
 import { GiHamburgerMenu } from "react-icons/gi"
+import { tokens } from "../../tokens.stylex"
 
 export const HamburgerMenu = () => {
   const [isHamMenuOpen, setIsHamMenuOpen] = useState(false)
   return (
-    <div {...stylex.props(styles.base)}>
+    <div
+      {...stylex.props(styles.base)}
+      onMouseLeave={() => {
+        setIsHamMenuOpen(false)
+      }}
+      // {...stylex.props(styles.buttonsContainer)}
+      // onClick={() => {
+      //   setIsHamMenuOpen(true)
+      // }}
+    >
       <div {...stylex.props(styles.logoDiv)}> Thet Su Nady</div>
       <div
-        onMouseLeave={() => {
-          setIsHamMenuOpen(false)
-        }}
+        // onMouseLeave={() => {
+        //   setIsHamMenuOpen(false)
+        // }}
         {...stylex.props(styles.buttonsContainer)}
         onClick={() => {
           setIsHamMenuOpen(true)
@@ -74,9 +84,12 @@ const styles = stylex.create({
     // width: "8rem",
     cursor: "pointer",
     paddingRight: "3rem",
+    width: "100%",
+    backgroundColor: "rgba(255,255,255,1)",
   },
   dropdownButtonsDiv: {
-    backgroundColor: "rgba(255,255,255,.8)",
+    backgroundColor: "rgba(255,255,255,0.8)",
+    // backgroundColor: tokens.brown1,
     display: "flex",
     flexDirection: "column",
     position: "absolute",

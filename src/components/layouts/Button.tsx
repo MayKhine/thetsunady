@@ -24,10 +24,14 @@ ButtonProps) => {
 
 const styles = stylex.create({
   base: {
-    backgroundColor: "rgba(255,255,255,0.0)",
+    // backgroundColor: "rgba(255,255,255,0.0)",
+    backgroundColor: {
+      default: "rgba(255,255,255,0.0)",
+      ":hover": tokens.green1,
+    },
     color: {
       default: tokens.green4,
-      ":hover": tokens.brown3,
+      ":hover": tokens.brown4,
     },
     // width: "80px",
     marginRight: "1rem",
@@ -36,6 +40,9 @@ const styles = stylex.create({
     border: "0px",
     fontSize: "1rem",
     padding: ".8rem",
-    width: "max-content",
+    // width: "max-content",
+    width: "100%",
+    // alignSelf: "flex-start",
+    // textAlign: "left",
   },
 })
