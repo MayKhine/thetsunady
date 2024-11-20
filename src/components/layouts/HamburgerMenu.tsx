@@ -3,7 +3,6 @@ import { Button } from "./Button"
 import { Link } from "react-router-dom"
 import { useState } from "react"
 import { GiHamburgerMenu } from "react-icons/gi"
-import { tokens } from "../../tokens.stylex"
 
 export const HamburgerMenu = () => {
   const [isHamMenuOpen, setIsHamMenuOpen] = useState(false)

@@ -1,6 +1,5 @@
 import * as stylex from "@stylexjs/stylex"
 import { Footer } from "../layouts/Footer"
-import { tokens } from "../../tokens.stylex"
 import exb1 from "../../assets/photos/exb1.jpg"
 import { Header } from "../layouts/Header"
 export const Experiences = () => {

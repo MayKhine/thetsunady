@@ -6,7 +6,7 @@
   "homepage": "https://maykhine.github.io/thetsunady",
   "scripts": {
     "predeploy": "pnpm run build",
-    "deploy": "gh-pages -d build",
+    "deploy": "gh-pages -d dist",
     "start": "vite",
     "dev": "vite",
     "build": "tsc -b && vite build",

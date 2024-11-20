@@ -1,4 +1,3 @@
-import { tokens } from "../../tokens.stylex"
 import { Header } from "../layouts/Header"
 import * as stylex from "@stylexjs/stylex"
 
