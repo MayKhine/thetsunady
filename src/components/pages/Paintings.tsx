@@ -10,6 +10,7 @@ import p5 from "../../assets/paintings/5.png"
 import p6 from "../../assets/paintings/6.png"
 import p7 from "../../assets/paintings/7.png"
 import p8 from "../../assets/paintings/8.png"
+import { Footer } from "../layouts/Footer"
 
 export const Paintings = () => {
   return (
@@ -28,6 +29,7 @@ export const Paintings = () => {
           <img {...stylex.props(styles.paitning)} src={p8} />
         </div>
       </div>
+      <Footer />
     </div>
   )
 }

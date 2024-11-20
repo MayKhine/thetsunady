@@ -14,7 +14,9 @@ export const Footer = () => {
         <FaFacebookF
           cursor="pointer"
           onClick={() => {
-            window.open("https://www.facebook.com/thetsu.nady/")
+            window.open(
+              "https://www.facebook.com/profile.php?id=100047340306058"
+            )
           }}
         />
         <FaLinkedinIn
