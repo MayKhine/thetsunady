@@ -9,10 +9,11 @@ import { About } from "./components/pages/About"
 import { Paintings } from "./components/pages/Paintings"
 import { Experiences } from "./components/pages/Experiences"
 
+console.log("Hi log from main.tsx", document.getElementById("root"))
 // createRoot(document.getElementById("root")!).render(
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
-    <BrowserRouter>
+    <BrowserRouter basename="/thetsunady">
       <Routes>
         <Route element={<Home />} path="/"></Route>
         <Route element={<About />} path="/about"></Route>

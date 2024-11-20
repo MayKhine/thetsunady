@@ -63,14 +63,14 @@ const styles = stylex.create({
     marginTop: "1rem",
     display: "flex",
     flexDirection: "column",
-    // backgroundColor: "white",
+    // backgroundColor: "black",
     maxWidth: "70%",
-    width: "500px",
+    width: "50rem",
     padding: "1rem",
     gap: "5rem",
   },
 
-  img: { maxWidth: "400px", height: "auto", padding: "3rem" },
+  img: { maxWidth: "30rem", height: "auto", padding: "3rem" },
   textDiv: {
     // display: "flex",
     // flexDirection: "column",

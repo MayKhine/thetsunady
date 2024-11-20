@@ -5,5 +5,5 @@ import styleX from "vite-plugin-stylex"
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [react(), styleX()],
-  base: "/thetsunady/",
+  base: "/thetsunady",
 })

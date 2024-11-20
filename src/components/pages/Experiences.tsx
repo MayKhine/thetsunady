@@ -73,7 +73,7 @@ const styles = stylex.create({
     paddingTop: "5rem",
     fontSize: ".8rem",
   },
-  img: { maxWidth: "70%", width: "400px" },
+  img: { maxWidth: "70%", width: "30rem" },
   title: { fontSize: "2rem", fontWeight: "600" },
   header: { fontSize: "1.5rem", fontWeight: "600" },
   shows: {

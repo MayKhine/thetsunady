@@ -58,7 +58,7 @@ const styles = stylex.create({
     justifyContent: "center",
   },
   paitning: {
-    minWidth: "300px",
+    minWidth: "30rem",
     maxWidth: "40%",
     height: "auto",
     objectFit: "contain",

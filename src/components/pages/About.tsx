@@ -72,7 +72,7 @@ const styles = stylex.create({
   },
   imgDiv: { backgroundColor: tokens.green2 },
   img: {
-    maxWidth: "270px",
+    maxWidth: "25rem",
     // maxWidth: "20rem",
     height: "auto",
     objectFit: "cover",
